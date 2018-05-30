@@ -1,0 +1,21 @@
+﻿<Window x:Name="All_Repairs" x:Class="WpfApp5.AllRepairs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="All Repairs" Height="565.5" Width="844.5">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="238" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="370"/>
+        <ListBox HorizontalAlignment="Left" Height="195" Margin="25,41,0,0" VerticalAlignment="Top" Width="342"/>
+        <Label Content="In Progress" HorizontalAlignment="Left" Margin="25,15,0,0" VerticalAlignment="Top" Width="81"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="247" Margin="10,268,0,0" Stroke="Black" VerticalAlignment="Top" Width="370"/>
+        <ListBox HorizontalAlignment="Left" Height="208" Margin="25,294,0,0" VerticalAlignment="Top" Width="342"/>
+        <Label Content="Delivered" HorizontalAlignment="Left" Margin="25,268,0,0" VerticalAlignment="Top"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="238" Margin="401,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="420"/>
+        <ListBox HorizontalAlignment="Left" Height="195" Margin="418,41,0,0" VerticalAlignment="Top" Width="387"/>
+        <Label Content="Not Delivered" HorizontalAlignment="Left" Margin="418,15,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,31 +11,42 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp5
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NewRepairs.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NewRepairs : Window
     {
-        public MainWindow()
+        InProgress n = new InProgress();
+
+
+        public NewRepairs()
         {
             InitializeComponent();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.DataContext = n;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AllRepairs win = new AllRepairs();
-            win.ShowDialog();
+            this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NewRepairs win = new NewRepairs();
-            win.ShowDialog();
+            MessageBox.Show("Skráð");
+            ProgramContext.context.InProgress.Add(n);
+            ProgramContext.context.SaveChanges();
+        }
+
+        private void Button_Loaded(object sender, RoutedEventArgs e)
+        {
 
         }
     }

@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp5
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for AllRepairs.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class AllRepairs : Window
     {
-        public Window1()
+        public AllRepairs()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
