@@ -64,6 +64,7 @@
     <Compile Include="AllRepairs.xaml.cs">
       <DependentUpon>AllRepairs.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SharedContext.cs" />
     <Page Include="AllRepairs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

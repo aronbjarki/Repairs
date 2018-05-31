@@ -15,5 +15,7 @@ namespace WpfApp5
         public string Aukahlutir { get; set; }
         public string Password { get; set; }
         public string Bilunarlýsing { get; set; }
+
+        
     }
 }

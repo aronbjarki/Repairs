@@ -5,28 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="New Repair" Height="351.763" Width="236.325" Loaded="Window_Loaded">
+        Title="New Repair" Height="359.763" Width="242.325" Loaded="Window_Loaded">
     <Grid>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="7,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="209"/>
-        <TextBox x:Name="txt_Name" HorizontalAlignment="Left" Height="16" Margin="91,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txt_KT" HorizontalAlignment="Left" Height="16" Margin="91,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txt_Phone" HorizontalAlignment="Left" Height="16" Margin="91,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="16" Margin="91,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="7,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="217"/>
+        <TextBox x:Name="txt_Name" HorizontalAlignment="Left" Height="16" Margin="91,15,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="txt_KT" HorizontalAlignment="Left" Height="16" Margin="91,34,0,0" TextWrapping="Wrap" Text="{Binding Kennitala}" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="txt_Phone" HorizontalAlignment="Left" Height="16" Margin="91,52,0,0" TextWrapping="Wrap" Text="{Binding Phone}" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="16" Margin="91,70,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="125"/>
         <Label Content="Nafn:" HorizontalAlignment="Left" Margin="7,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Kennitala:" HorizontalAlignment="Left" Margin="7,29,0,0" VerticalAlignment="Top"/>
         <Label Content="Símanúmer:" HorizontalAlignment="Left" Margin="7,48,0,0" VerticalAlignment="Top"/>
         <Label Content="Netfang:" HorizontalAlignment="Left" Margin="7,66,0,0" VerticalAlignment="Top"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="183" Margin="7,97,0,0" Stroke="Black" VerticalAlignment="Top" Width="209"/>
-        <TextBox x:Name="txt_Type" HorizontalAlignment="Left" Height="16" Margin="91,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txt_Other" HorizontalAlignment="Left" Height="16" Margin="91,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Tegund:" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top"/>
-        <Label Content="Aukahlutir:" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
-        <Label Content="Lykilorð:" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_Password" HorizontalAlignment="Left" Height="16" Margin="91,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="197" Margin="7,97,0,0" Stroke="Black" VerticalAlignment="Top" Width="217"/>
+        <TextBox x:Name="txt_Type" HorizontalAlignment="Left" Height="22" Margin="91,102,0,0" TextWrapping="Wrap" Text="{Binding Tegund}" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="txt_Other" HorizontalAlignment="Left" Height="22" Margin="91,127,0,0" TextWrapping="Wrap" Text="{Binding Aukahlutir}" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Tegund:" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Aukahlutir:" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lykilorð:" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Password" HorizontalAlignment="Left" Height="20" Margin="92,152,0,0" TextWrapping="Wrap" Text="{Binding Password}" VerticalAlignment="Top" Width="125"/>
         <Label Content="Bilunarlýsing:" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_Problem" HorizontalAlignment="Left" Height="92" Margin="14,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
-        <Button Content="Register" HorizontalAlignment="Left" Margin="7,285,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="141,285,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="txt_Problem" HorizontalAlignment="Left" Height="100" Margin="14,184,0,0" TextWrapping="Wrap" Text="{Binding Bilunarlýsing}" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="149,299,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Window>

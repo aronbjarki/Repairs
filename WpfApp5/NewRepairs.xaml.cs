@@ -40,9 +40,10 @@ namespace WpfApp5
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Skráð");
             ProgramContext.context.InProgress.Add(n);
             ProgramContext.context.SaveChanges();
+            MessageBox.Show("Skráð");
+            this.Close();
         }
 
         private void Button_Loaded(object sender, RoutedEventArgs e)

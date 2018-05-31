@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="btn_AllRepairs" Content="All Repairs" HorizontalAlignment="Left" Margin="168,330,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
         <Button Content="New" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click_1"/>
-        <ListBox HorizontalAlignment="Left" Height="300" Margin="10,25,0,0" VerticalAlignment="Top" Width="221"/>
+        <ListBox x:Name="lbInProgress1" ItemsSource="{Binding}" DisplayMemberPath="Name" HorizontalAlignment="Left" Height="300" Margin="10,25,0,0" VerticalAlignment="Top" Width="126"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="119,6,0,0" Stroke="Black" VerticalAlignment="Top" Width="112"/>
         <Label Content="Repairs in progress" HorizontalAlignment="Left" Margin="119,0,0,0" VerticalAlignment="Top" Height="25"/>
 

@@ -48,5 +48,10 @@ namespace WpfApp5
 
             this.DataContext = view;
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
