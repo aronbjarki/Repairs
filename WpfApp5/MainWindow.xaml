@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="Repairs" Height="391.646" Width="250.452">
+        Title="Repairs" Height="391.646" Width="250.452" Loaded="Window_Loaded">
     <Grid>
         <Button x:Name="btn_AllRepairs" Content="All Repairs" HorizontalAlignment="Left" Margin="168,330,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click"/>
         <Button Content="New" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click_1"/>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,16 @@ namespace WpfApp5
             NewRepairs win = new NewRepairs();
             win.ShowDialog();
 
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            CollectionViewSource view = new CollectionViewSource();
+            ProgramContext.context.InProgress.Load();
+            view.Source = ProgramContext.context.InProgress.Local;
+
+            this.DataContext = view;
         }
     }
 }
